@@ -138,7 +138,7 @@ At Hexarevision, we're not just building software; we're shaping the future of t
 		var content = new Div()
 			.addChildren(
 				new Div()
-					.className("flex flex-row justify-center p-5 border border-b")
+					.className("flex flex-row justify-center p-5")
 					.addChild(
 						new Img()
 							.src("/images/hexarevision.webp")
@@ -179,7 +179,7 @@ Join us as we continue to innovate and expand the possibilities of what can be a
 		var content = new Div()
 			.addChildren(
 				new Div()
-					.className("flex flex-row justify-center p-5 border border-b")
+					.className("flex flex-row justify-center p-5")
 					.addChild(
 						new Img()
 							.src("/images/larry.png")

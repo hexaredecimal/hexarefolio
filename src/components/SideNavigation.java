@@ -15,7 +15,7 @@ public class SideNavigation extends WebXContainerElement {
 	@Override
 	public String render() {
 		return new Div()
-			.className("fixed h-screen sticky top-0 border")
+			.className("fixed h-screen sticky top-0 border w-64")
 			.addChildren(
 				new Div()
 					.className("px-4 py-6")
