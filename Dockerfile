@@ -16,7 +16,7 @@ WORKDIR /hexarefolio
 EXPOSE 8080
 
 # Run the Java application
-CMD ["java", "-jar", " hexarefolioserver-dist.jar", "."]
+CMD ["java", "-jar", "hexarefolioserver-dist.jar", "."]
 
 
 
