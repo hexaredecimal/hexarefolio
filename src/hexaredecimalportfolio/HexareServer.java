@@ -30,6 +30,7 @@ public class HexareServer {
 	public static void home(BlazingResponse response) {
 
 		WebXElement page = new Html()
+			.title("MFANAKAGAMA | HOME")
 			.addHeaderScript("https://cdn.tailwindcss.com")
 			.addChildren(
 				new Div()
@@ -50,13 +51,13 @@ public class HexareServer {
 													.attr("width", "40%")
 													.className("px-5 border"),
 												new Img("https://github-readme-stats.vercel.app/api/top-langs/?username=hexaredecimal&hide_border=true&theme=light")
-													.attr("width", "40%")
+													.attr("width", "50%")
 													.className("px-5 border"),
 												new Img("https://awesome-github-stats.azurewebsites.net/user-stats/hexaredecimal?cardType=level-alternate&preferLogin=false")
-													.attr("width", "40%")
+													.attr("width", "50%")
 													.className("px-5 border"),
 												new Img("https://github-readme-streak-stats.herokuapp.com?user=hexaredecimal")
-													.attr("width", "40%")
+													.attr("width", "50%")
 													.className("px-5 border")
 											),
 										new Div()
@@ -86,7 +87,7 @@ public class HexareServer {
 		response.sendUiRespose(page);
 	}
 
-	@Post("/foreword")
+	@Post("/about")
 	public static void foreword(BlazingResponse response) {
 		String text = """
 I'm a passionate developer with a strong foundation in programming, particularly in languages like Go, C, Java, Python, and Kotlin. 
@@ -100,7 +101,7 @@ In everything I do, I'm driven by a love for coding and a desire to innovate. My
 """;
 		var content = new Div()
 			.addChildren(
-				new H1("Foreword")
+				new H1("About")
 					.className("my-5 p-5 text-center text-2xl border"),
 				new Div()
 					.addChildren(
@@ -195,9 +196,9 @@ Join us as we continue to innovate and expand the possibilities of what can be a
 						new Div()
 							.addChildren(
 								new A()
-									.href("https://hexarevision.co.za/home")
+									.href("https://github.com/smllvendorlibs")
 									.addChild(
-										new Button("Visit Hexarevision")
+										new Button("Visit SMLL")
 											.className("border rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700")
 									)
 							).className("p-5 flex flex-row justify-center")
