@@ -16,7 +16,7 @@ public class UserInfo extends WebXContainerElement {
 	@Override
 	public String render() {
 		return new Div()
-			.className("absolute inset-x-0 bottom-0")
+			.className("absolute inset-x-0 bottom-0 border")
 			.addChildren(
 				new A()
 					.href("https://github.com/hexaredecimal")
