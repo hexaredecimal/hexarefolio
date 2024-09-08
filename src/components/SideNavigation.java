@@ -27,9 +27,9 @@ public class SideNavigation extends WebXContainerElement {
 							.className("mt-6 space-y-1")
 							.addChildren(
 								new Navitem("General", "/"),
-								new Navitem("Foreword", null),
 								new DropDownOption("Organisations", "Hexarevision", "SMLL"),
-								new DropDownOption("Projects", "Hexarewm", "SMLL", "BlazingWebX", "Equcyph", "CollabMD")
+								new DropDownOption("Projects", "Hexarewm", "SMLL", "BlazingWebX", "Equcyph", "CollabMD"),
+								new Navitem("About", null)
 								//new Navitem("General")
 							)
 					),
